@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .info {
+  background-color: #8e2020;
+  color: #fff;
+}
+
+body .info p {
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+  font-weight: 900;
+}
+
+body .navbar-logo-box {
+  background-color: #fafafa;
+}
+
+body .navbar-logo-box .navbar-logo {
+  display: block;
+  width: 8rem;
+  margin: 1rem auto;
+}
+
+body .navbar-logo-box .navbar-logo img {
+  width: 100%;
+}
+
+body .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body .navbar .navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+}
+
+body .navbar .navbar-menu.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 500px;
+  -webkit-transition: max-height 0.6s;
+  transition: max-height 0.6s;
+}
+
+body .navbar .navbar-menu .navbar-menu-item {
+  text-align: center;
+}
+
+body .navbar .navbar-menu .navbar-menu-item .nav-link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #484848;
+}
+
+body .navbar .navbar-menu .navbar-menu-item .nav-link:hover {
+  color: #8e2020;
+}
+
+body .navbar .navbar-menu .navbar-menu-item .nav-link i {
+  margin-right: 3px;
+}
+
+@media (max-width: 509px) {
+  body .navbar .navbar-menu {
+    /* display: none; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    -webkit-transition: max-height 0.6s;
+    transition: max-height 0.6s;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  body .navbar .navbar-menu.navbar-menu-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+body .navbar .navbar-toggler {
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+  padding: 0;
+  margin: 12px;
+  width: 26px;
+  height: 22px;
+  outline: none;
+  position: relative;
+}
+
+body .navbar .navbar-toggler .navbar-toggler-icon {
+  width: 26px;
+  height: 2px;
+  background-color: #484848;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
+}
+
+body .navbar .navbar-toggler .navbar-toggler-icon:nth-child(1) {
+  top: 0;
+}
+
+body .navbar .navbar-toggler .navbar-toggler-icon:nth-child(2) {
+  top: 50%;
+}
+
+body .navbar .navbar-toggler .navbar-toggler-icon:nth-child(3) {
+  top: 100%;
+}
+
+body .navbar .navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
+  top: 50%;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+body .navbar .navbar-toggler.open .navbar-toggler-icon:nth-child(2) {
+  opacity: 0;
+}
+
+body .navbar .navbar-toggler.open .navbar-toggler-icon:nth-child(3) {
+  top: 50%;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+@media (min-width: 510px) {
+  body .navbar .navbar-toggler {
+    display: none;
+  }
+}
+
+body .article {
+  margin: 30px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+/*# sourceMappingURL=main.css.map */

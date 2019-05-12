@@ -1,0 +1,174 @@
+/* Global section */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation section */
+
+.info {
+    background-color: #8e2020;
+    color: #fff;
+}
+
+.info p {
+    margin: 0;
+    padding: 4px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    position: sticky;
+    top: 0;
+}
+
+.navbar-logo-box {
+    background-color: #fafafa;
+}
+
+.navbar-logo-box .navbar-logo {
+    display: block;
+    width: 8rem;
+    margin: 1rem auto;
+}
+
+.navbar-logo-box .navbar-logo img {
+    width: 100%;
+}
+
+.navbar-menu {
+    padding: .75rem;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+.navbar-menu.show {
+    display: flex;
+    max-height: 500px;
+    transition: max-height 0.6s;
+}
+
+.navbar-menu .navbar-menu-item {
+    text-align: center;
+}
+
+.navbar-menu .navbar-menu-item .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #484848;
+}
+
+.navbar-menu .navbar-menu-item .nav-link:hover {
+    color: #8e2020;
+}
+
+.navbar-menu .navbar-menu-item .nav-link i {
+    margin-right: 3px;
+}
+
+.navbar-toggler {
+    border: unset;
+    background-color: unset;
+    cursor: pointer;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    padding: 0;
+    margin: 12px;
+    width: 26px;
+    height: 22px;
+    outline: none;
+    position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    width: 26px;
+    height: 2px;
+    background-color: #484848;
+    position: absolute;
+    left: 0;
+    transition: all .45s;
+}
+
+.navbar-toggler .navbar-toggler-icon:nth-child(1) {
+    top: 0;
+}
+
+.navbar-toggler .navbar-toggler-icon:nth-child(2) {
+    top: 50%;
+}
+
+.navbar-toggler .navbar-toggler-icon:nth-child(3) {
+    top: 100%;
+}
+
+.navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
+    top: 50%;
+    transform: rotateZ(45deg);
+}
+
+.navbar-toggler.open .navbar-toggler-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.open .navbar-toggler-icon:nth-child(3) {
+    top: 50%;
+    transform: rotateZ(-45deg);
+}
+
+/* Small scren */
+
+@media (max-width: 509px) {
+    .navbar-menu {
+        /* display: none; */
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+        transition: max-height 0.6s;
+        flex-basis: 100%;
+    }
+    .navbar-menu .navbar-menu-item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Big screen */
+
+@media (min-width: 510px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+/* Main section */
+
+.article {
+    margin: 30px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+}

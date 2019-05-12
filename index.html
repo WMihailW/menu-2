@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="info">
+        <p>Some impotant imformation</p>
+    </div>
+
+    <header class="container navbar-logo-box">
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center order-1 order-md-0">
+                <div class="phones my-1">
+                    <a href="tel:0617696254">(061)7696254</a>
+                </div>
+                <div class="phones  my-1">
+                    <a href="tel:0676180545">(067)6180545</a>
+                </div>
+                <div class="cta  my-1">
+                    <button class="btn btn-danger">Заказать обратный звонок</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 order-0 order-md-1">
+                <a class="navbar-logo" href="/">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <p class="text-center">Some pretty description about its beautiful company</p>
+            </div>
+            <div class="col-12 col-md-4 order-2 order-md-2 d-flex flex-column justify-content-center align-items-center">
+                <h5>График работы</h5>
+                <div class="work-times">
+                    <div>понедельник-суббота 9:00-19:00</div>
+                    <div>воскресенье 9:00-17:00</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button class="navbar-toggler" id="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="navbar-menu" id="navbar-menu">
+            <li class="navbar-menu-item">
+                <a class="nav-link" href=""><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li class="navbar-menu-item">
+                <a class="nav-link" href=""><i class="fas fa-folder"></i>Catalog</a>
+            </li>
+            <li class="navbar-menu-item">
+                <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i>How to buy?</a>
+            </li>
+            <li class="navbar-menu-item">
+                <a class="nav-link" href=""><i class="fas fa-address-card"></i>About us</a>
+            </li>
+            <li class="navbar-menu-item">
+                <a class="nav-link" href=""><i class="fas fa-phone-square"></i>Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="article"></div>
+        <div class="article"></div>
+        <div class="article"></div>
+        <div class="article"></div>
+        <div class="article"></div>
+        <div class="article"></div>
+        <div class="article"></div>
+        <div class="article"></div>
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+
+        document.getElementById("navbar-toggler").addEventListener("click", () => {
+            console.log("Click");
+            document.getElementById("navbar-menu").classList.toggle("show");
+            document.getElementById("navbar-toggler").classList.toggle("open");
+        });
+
+    </script>
+
+</body>
+
+</html>
